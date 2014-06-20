@@ -46,6 +46,10 @@
 		11F55353194C425100B4356E /* weather-snow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F55339194C425100B4356E /* weather-snow@2x.png */; };
 		11F55354194C425100B4356E /* weather-tstorm.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F5533A194C425100B4356E /* weather-tstorm.png */; };
 		11F55355194C425100B4356E /* weather-tstorm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F5533B194C425100B4356E /* weather-tstorm@2x.png */; };
+		11F553581951771200B4356E /* WXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F553571951771200B4356E /* WXClient.m */; };
+		11F5535B1951773B00B4356E /* WXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F5535A1951773B00B4356E /* WXManager.m */; };
+		11F5535E1951777F00B4356E /* WXCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F5535D1951777F00B4356E /* WXCondition.m */; };
+		11F55361195177D300B4356E /* WXDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F55360195177D300B4356E /* WXDailyForecast.m */; };
 		EB6BD38DDE8D41DFADFEDC07 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F367BD90FFB4974A745D1A1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +108,14 @@
 		11F55339194C425100B4356E /* weather-snow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-snow@2x.png"; sourceTree = "<group>"; };
 		11F5533A194C425100B4356E /* weather-tstorm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm.png"; sourceTree = "<group>"; };
 		11F5533B194C425100B4356E /* weather-tstorm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm@2x.png"; sourceTree = "<group>"; };
+		11F553561951771200B4356E /* WXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXClient.h; sourceTree = "<group>"; };
+		11F553571951771200B4356E /* WXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXClient.m; sourceTree = "<group>"; };
+		11F553591951773B00B4356E /* WXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXManager.h; sourceTree = "<group>"; };
+		11F5535A1951773B00B4356E /* WXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXManager.m; sourceTree = "<group>"; };
+		11F5535C1951777F00B4356E /* WXCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCondition.h; sourceTree = "<group>"; };
+		11F5535D1951777F00B4356E /* WXCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCondition.m; sourceTree = "<group>"; };
+		11F5535F195177D300B4356E /* WXDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDailyForecast.h; sourceTree = "<group>"; };
+		11F55360195177D300B4356E /* WXDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDailyForecast.m; sourceTree = "<group>"; };
 		8F367BD90FFB4974A745D1A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82D16C0DD794BF596D99922 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +185,14 @@
 				11F5531A194C3EAE00B4356E /* WXController.m */,
 				11F552F9194C2B9000B4356E /* AppDelegate.h */,
 				11F552FA194C2B9000B4356E /* AppDelegate.m */,
+				11F553561951771200B4356E /* WXClient.h */,
+				11F553571951771200B4356E /* WXClient.m */,
+				11F553591951773B00B4356E /* WXManager.h */,
+				11F5535A1951773B00B4356E /* WXManager.m */,
+				11F5535C1951777F00B4356E /* WXCondition.h */,
+				11F5535D1951777F00B4356E /* WXCondition.m */,
+				11F5535F195177D300B4356E /* WXDailyForecast.h */,
+				11F55360195177D300B4356E /* WXDailyForecast.m */,
 				11F552FC194C2B9000B4356E /* Images.xcassets */,
 				11F552F1194C2B9000B4356E /* Supporting Files */,
 			);
@@ -438,9 +458,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F5535B1951773B00B4356E /* WXManager.m in Sources */,
+				11F55361195177D300B4356E /* WXDailyForecast.m in Sources */,
 				11F552FB194C2B9000B4356E /* AppDelegate.m in Sources */,
 				11F552F7194C2B9000B4356E /* main.m in Sources */,
 				11F5531B194C3EAE00B4356E /* WXController.m in Sources */,
+				11F5535E1951777F00B4356E /* WXCondition.m in Sources */,
+				11F553581951771200B4356E /* WXClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
